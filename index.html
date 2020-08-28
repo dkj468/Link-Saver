@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkbook- Save your useful links here</title>
+    <link rel="stylesheet" type="text/css" href="app.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="container" id="navContainer">
+        <h1 class="navHeader">Linkbook</h1>
+        <a href="#" class="addLink" id="addBtn">+</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="addLinkContainer" class="full-screen hidden">
+        <div class="panel" id="addLinkPanel">
+          <h3 class="header">Add Link</h3>
+          <form id="addLinkForm">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Title"
+              id="linkTitle"
+              required
+            />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="link"
+              id="linkURL"
+              required
+            />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Categories (comma separated)"
+              id="linkCategory"
+              required
+            />
+            <div class="" id="categories"></div>
+            <input type="button" type="submit" value="Submit" id="linkSubmit" />
+            <input type="button" type="reset" value="Cancel" id="linkCancel" />
+          </form>
+        </div>
+      </div>
+
+      <div class="linkList"></div>
+    </div>
+    <script src="app.js" type="text/JavaScript"></script>
+  </body>
+</html>
